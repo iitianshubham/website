@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title> Pakit </title>
+            <meta charset = "utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--            <link rel = "stylesheet" type = "text/css" href = "/home/aakash/Desktop/JustPakit/bootstrap-4.0.0-beta-dist/css/bootstrap.css">
+            <link rel = "stylesheet" type = "text/css" href = "/home/aakash/Desktop/JustPakit/bootstrap-4.0.0-beta-dist/css/bootstrap.min.css">
+            <link rel = "stylesheet" type = "text/css" href = "/home/aakash/Desktop/JustPakit/bootstrap-4.0.0-beta-dist/css/bootstrap.grid.css">	-->
+            <link type = "text/css" rel = "stylesheet" href = "css/New Pakit.css">
+            <link type = "text/css" rel = "stylesheet" href = "responsive/New Pakit Responsive.css">
+            <script>
+                $(document).ready(function(){
+                    $("#from_input").focus(function(){
+                    if(($("#from_input").val()) == ""){
+                    $("#from_source_label").removeClass("movelabeltodefault");	
+                    $("#from_source_label").addClass("movelabelup");
+                    $("#from_input").removeClass("underlinedefault");	
+                    $("#from_input").addClass("blueunderline");    
+                        }
+                    if($("#destination_input").val() == ""){
+                    $("#to_destination_label").addClass("movelabeltodefault");
+                    $("#destination_input").addClass("underlinedefault");    
+                        }		
+                    if($("#flight_input").val() == ""){
+                    $("#flight_date_label").addClass("movelabeltodefault");		
+                    $("#flight_input").addClass("underlinedefault");    
+                        }
+                    if($("#weight_input").val() == ""){
+                    $("#weight_carry_label").addClass("movelabeltodefault");
+                    $("#weight_input").addClass("underlinedefault");    
+                        }
+                    });
+                });
+
+
+                $(document).ready(function(){
+                    $("#destination_input").focus(function(){
+                    if(($("#destination_input").val()) == ""){
+                    $("#to_destination_label").removeClass("movelabeltodefault");
+                    $("#to_destination_label").addClass("movelabelup");
+                    $("#destination_input").removeClass("underlinedefault");	
+                    $("#destination_input").addClass("blueunderline");      
+                        }
+                    if($("#from_input").val() == ""){
+                    $("#from_source_label").addClass("movelabeltodefault");
+                    $("#from_input").addClass("underlinedefault");    
+                        }		
+                    if($("#flight_input").val() == ""){
+                    $("#flight_date_label").addClass("movelabeltodefault");
+                    $("#flight_input").addClass("underlinedefault");    
+                        }
+                    if($("#weight_input").val() == ""){
+                    $("#weight_carry_label").addClass("movelabeltodefault");
+                    $("#weight_input").addClass("underlinedefault");    
+                        }					
+                    });
+                });
+
+                $(document).ready(function(){
+                    $("#flight_input").focus(function(){
+                    if($("#flight_input").val() == ""){
+                    $("#flight_date_label").removeClass("movelabeltodefault");
+                    $("#flight_date_label").addClass("movelabelup");
+                    $("#flight_input").removeClass("underlinedefault");	
+                    $("#flight_input").addClass("blueunderline"); 
+                        }
+                    if($("#destination_input").val() == ""){
+                    $("#to_destination_label").addClass("movelabeltodefault");
+                    $("#destination_input").addClass("underlinedefault");    
+                        }		
+                    if($("#from_input").val() == ""){
+                    $("#from_source_label").addClass("movelabeltodefault");
+                    $("#from_input").addClass("underlinedefault");    
+                        }
+                    if($("#weight_input").val() == ""){
+                    $("#weight_carry_label").addClass("movelabeltodefault");
+                    $("#weight_input").addClass("underlinedefault");    
+                        }					
+                    });
+                });
+
+                $(document).ready(function(){
+                    $("#weight_input").focus(function(){
+                    if($("#weight_input").val() == ""){
+                    $("#weight_carry_label").removeClass("movelabeltodefault");	
+                    $("#weight_carry_label").addClass("movelabelup");
+                    $("#weight_input").removeClass("underlinedefault");	
+                    $("#weight_input").addClass("blueunderline");    
+                        }
+                    if($("#destination_input").val() == ""){
+                    $("#to_destination_label").addClass("movelabeltodefault");
+                    $("#destination_input").addClass("underlinedefault");    
+                        }		
+                    if($("#flight_input").val() == ""){
+                    $("#flight_date_label").addClass("movelabeltodefault");
+                    $("#flight_input").addClass("underlinedefault");    
+                        }
+                    if($("#from_input").val() == ""){
+                    $("#from_source_label").addClass("movelabeltodefault");
+                    $("#from_input").addClass("underlinedefault");    
+                        }				
+                    });
+                });
+            </script>
+        </head>
+        <body>
+            <div class = "container_box">
+                <nav class="navbar navbar-default navigation">
+                    <div class="container-fluid">
+                    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        					<span class="icon-bar"></span>
+      					  	<span class="icon-bar"></span>
+        					<span class="icon-bar"></span>                        
+      					</button>
+      					<div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href = "#">A<img src = "#"></a></li>
+                            <li><a href = "#">B<img src = "#"></a></li>
+                            <li><a href = "#">C<img src = "#"></a></li>
+                            <li><a href = "#">D<img src = "#"></a></li>
+                            <li><a href = "#">E<img src = "#"></a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </nav>
+                <div class = "main_row">
+                    <ul>
+                        <li><a href = "#">New Pakit</a></li>
+                        <li><a href = "#">Current Pakit</a></li>
+                    </ul>
+                </div>
+                <hr>        
+        <!--    <div class="row" id="navbar">
+                <div class="col-md-3 navcol col-md-offset-9">
+                    <div class="row">
+                        <!-- HOVER DROPDOWN IMPLEMENTATION -->
+            <!--            <div class="col-md-3 col-md-offset-3 dropdown col-xs-1 col-xs-offset-9">
+                            <img class="img-responsive dropdown-toggle" data-toggle="dropdown" src="SVGs/requests.svg"/>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="col-md-3 dropdown col-xs-1">
+                            <img class="img-responsive dropdown-toggle" data-toggle="dropdown" src="SVGs/notifications.svg"/>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="col-md-3 dropdown col-xs-1">
+                            <img class="img-responsive dropdown-toggle" data-toggle="dropdown" src="SVGs/account.svg"/>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>      -->
+    <!------------------------------------------------------NEW/CURRENT PAKITS TABS------------------------------------------------------------>
+    <!--        <div class="row" id="tabs">
+                <div class="col-md-12">
+                    <div class="row tabrow">
+                        <div class="col-md-2 col-xs-6">
+                            <div class="row">
+                                <div class="col-lg-11 col-lg-offset-3 col-md-11 col-md-offset-6 col-xs-4 col-xs-offset-6">
+                                    <a href="#" class="disabledLink">New Pakit</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-xs-6">
+                           <a href="#" class="curpakit">Current Pakits</a>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                </div>
+            </div>      -->   
+                <div class = "row box">
+                    <div class ="col-md-4 left_box">
+                        <div id="MainMenu">
+                          <div class="list-group panel options">
+                                <a href="#club_baggage_extension" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">CLUB BAGGAGE</a>
+                                <div class="collapse" id="club_baggage_extension"></div>
+                                <a href="#deliver_pakit_extension" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">DELIVER A PAKIT</a>
+                                <div class="collapse" id="deliver_pakit_extension"></div>
+                                <a href="#send_pakit_extension" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">SEND A PAKIT</a>
+                                <div class="collapse" id="send_pakit_extension"></div>
+                                <a href="#request_pakit_extension" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">REQUEST A PAKIT</a>
+                                <div class="collapse" id="request_pakit_extension"></div>
+                          </div>
+                        </div>
+                        </div>                      
+                    <div class = "col-md-8 right_box">
+                        <div class = "inner_box">
+                            <form>
+                                <p><label id = "from_source_label">From(Source)</label></p>
+                                <p class = "input_feild"><img src = "SVGs/source.svg"><input type = "text" id = "from_input"/></p>
+                                <p><label id = "to_destination_label">To(Destination)</label></p>
+                                <p class = "input_feild"><img src = "SVGs/destination.svg"><input type = "text" id = "destination_input"/></p>
+                                <p><label id = "flight_date_label">Flight Date</label></p>
+                                <p class = "input_feild"><img src = "SVGs/flight.svg"><input type = "text" id = "flight_input"/></p>
+                                <p><label id = "weight_carry_label">Weight you can carry</label></p>
+                                <p class = "input_feild"><img src = "SVGs/suitcase-04.svg"><input type = "text" id = "weight_input"/></p>
+                                <p id = "input_para"><input type = "submit" value = "POST AND VIEW USERS"/></p>   
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </body>
+</html>

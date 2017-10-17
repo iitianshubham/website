@@ -1,0 +1,66 @@
+@media only screen and (max-width: 1220px){
+    form input{
+        width: 35%;
+    }
+    form input[type=submit]{
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .options a{
+        padding-left: 0;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    form input{
+        width: 40%;
+    }
+    form input[type=submit]{
+        width: 40%;
+    }
+    #myNavbar ul li{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 670px){
+    form input{
+        width: 50%;
+    }
+    form input[type=submit]{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 530px){
+    form input{
+        width: 60%;
+    }
+    form input[type=submit]{
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width: 420px){
+    form input{
+        width: 70%;
+    }
+    form input[type=submit]{
+        margin-right: 50px;
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 400px){
+    .input_feild{
+        margin-left: 30px;
+    }
+    form input{
+        margin-left: 10px;
+    }
+    form label{
+        margin-left: 70px;
+    }
+}

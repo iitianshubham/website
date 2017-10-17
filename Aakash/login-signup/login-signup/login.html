@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title> Pakit </title>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <link rel = "stylesheet" type = "text/css" href = "css/login.css">
+            <script>
+                $(document).ready(function(){
+                    $("#email").focus(function(){
+                        if(($("#email").val()) == ""){
+                        $("#email_label").removeClass("movelabeltodefault");	
+                        $("#email_label").addClass("movelabelup");
+                        $("#email").removeClass("underlinedefault");    
+                        $("#email").addClass("underlineinput");    
+                            }
+                        if($("#password").val() == ""){
+                        $("#password_label").addClass("movelabeltodefault");
+                        $("#password").removeClass("underlineinput");
+                        $("#password").addClass("underlinedefault");    
+                            }				
+                        });
+			     });
+                $(document).ready(function(){
+                    $("#password").focus(function(){
+                        if(($("#password").val()) == ""){
+                        $("#password_label").removeClass("movelabeltodefault");	
+                        $("#password_label").addClass("movelabelup");
+                        $("#password").removeClass("underlinedefault");    
+                        $("#password").addClass("underlineinput");    
+                            }
+                        if($("#email").val() == ""){
+                        $("#email_label").addClass("movelabeltodefault");
+                        $("#email").removeClass("underlineinput");
+                        $("#email").addClass("underlinedefault");    
+                            }				
+                        });
+			     });
+            </script>
+        </head>
+        <body>
+            <div class = "container">
+                <div class = "pakit_logo"><img src = "Images/logo.png" class = "pakit"></div>
+                <div class = "row">
+                    <div class = "col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6 col-xs-offset-3 col-xs-6 fb_login">
+                        <p>
+                            <a href = "#">
+                                <span class = "fb_logo"><img src = "Images/fb_blue.png"></span>
+                                <span class = "login_text">Login with Faceboook</span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <p class = "or">OR</p>
+                <div class = "row">
+                    <div class = "col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6 inputs">
+                        <form>
+                            <div class = "email_input">
+                                <label id = "email_label"> Email </label>
+<!--                                <div class = "underline"></div>-->
+                                <input type = "email" id = "email"/>
+                            </div>
+                            <div class = "password_input">
+                                <label id = "password_label"> Password </label>
+<!--                                <div class = "underline"></div>-->
+                                <input type = "password" id = "password"/>
+                            </div>
+                            <div class = "login_submit">
+                                <input type = "submit" value = "Login"/>
+                            </div>
+                            <p>Not registered? <a href = "signup.html">Create an account</a></p>
+                        </form>   
+                    </div>
+                </div>
+            </div>
+        </body>
+    </html>
